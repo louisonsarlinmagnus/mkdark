@@ -5,7 +5,7 @@ hide:
 ---
 
 # Markdown Cheat Sheet
-
+https://squidfunk.github.io/mkdocs-material/reference/
 https://facelessuser.github.io/pymdown-extensions/extensions/critic/
 
 ## Résumé
