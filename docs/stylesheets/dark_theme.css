@@ -15,18 +15,29 @@
 Default text color
 and background color
 */
-.md-main {
-    color: white !important;
-    background-color: var(--fond-noir) !important;
+  .md-main {
+    color: white;
+    background-color: var(--fond-noir);
   }
   
   /*
   Main headlines
   */
-  .md-main h1 {
-    color: white !important;
+  .headers_exemples {
+    color: black !important;
+    font-weight: normal !important;
+    font-variant-caps: normal;
+    text-transform: none !important;
   }
   
+  .md-main h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
+    color: white;
+    font-weight: normal;
+    font-variant-caps: normal;
+    text-transform: none !important;
+  }
+
+
   /*
   Tables
   */
@@ -37,6 +48,7 @@ and background color
 
   .md-typeset table:not([class]){
     background-color: var(--fond-content);
+    border: var(--fond-noir);
   }
   
   .md-typeset table:not([class]) th {
@@ -44,8 +56,8 @@ and background color
   }
   
   /* .md-typeset table:not([class]) tr:hover {
-    box-shadow: none !important;
-    background-color: rgba(255, 255, 255, 0.04) !important;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.04);
   } */
   
   .md-typeset :is(.admonition, details){
@@ -57,8 +69,8 @@ and background color
   Blockquotes
   */
   .md-typeset blockquote {
-    color: black !important;
-    border-color: black !important;
+    color: white;
+    background-color: var(--fond-tres-gris);
   }
   
   /*
@@ -71,47 +83,47 @@ and background color
   Left and right toc scrollbar
   */
   .md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
-    background-color: #E0E0E0 !important;
+    background-color: #E0E0E0;
   }
   
   
   
   .md-nav {
-    color: #F5F5F5 !important;
-    background-color: var(--fond-noir) !important;
+    color: #F5F5F5;
+    background-color: var(--fond-noir);
   }
   
   /*
   Arrow Left Icon
   */
   html .md-nav--primary .md-nav__title:before {
-    color: #FAFAFA !important;
+    color: #FAFAFA;
   }
   
   .md-nav__title {
-    color: #ffffff !important;
-    background-color: var(--fond-noir) !important;
+    color: #ffffff;
+    background-color: var(--fond-noir);
   }
   
   /*
   Arrow Right Icon
   */
   .md-nav--primary .md-nav__link:after {
-    color: #FAFAFA !important;
+    color: #FAFAFA;
   }
   
   .md-nav__list {
-    color: #ffffff !important;
-    background-color: var(--fond-noir) !important;
+    color: #ffffff;
+    background-color: var(--fond-noir);
   }
   
   .md-nav__item {
-    color: #ffffff !important;
-    background-color: var(--fond-noir) !important;
+    color: #ffffff;
+    background-color: var(--fond-noir);
   }
   
   .md-nav__link[data-md-state=blur] {
-    color: #ffffff8a !important;
+    color: #ffffff8a;
   }
   
   /*
@@ -127,20 +139,20 @@ and background color
   background is scroll handle color!
   */
   .md-search__scrollwrap::-webkit-scrollbar-thumb {
-    background-color: #E0E0E0 !important;
+    background-color: #E0E0E0;
   }
   /*
   scroll bar background color
   */
   .md-search__scrollwrap {
-    background-color: #424242 !important;
+    background-color: #424242;
   }
   
   /*
   Icon color
   */
   .md-search-result__article--document:before {
-    color: #EEEEEE !important;
+    color: #EEEEEE;
   }
   
   /*
@@ -148,22 +160,22 @@ and background color
   result list background
   */
   .md-search-result__list {
-    color: #EEEEEE !important;
-    background-color: var(--fond-noir) !important;
+    color: #EEEEEE;
+    background-color: var(--fond-noir);
   }
   
   /*
   result info/count
   */
   .md-search-result__meta {
-    background-color: #EEEEEE !important;
+    background-color: #EEEEEE;
   }
   
   /*
   article preview text color
   */
   .md-search-result__teaser {
-    color: #BDBDBD !important;
+    color: #BDBDBD;
   }
 
   .highlight span.filename {
