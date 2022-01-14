@@ -1,0 +1,76 @@
+site_name: Mes Docs
+
+# Theme
+theme:
+  name: material
+  palette:
+    primary: deep purple
+    accent: purple
+  highlightjs: true
+  include_sidebar: false
+  # shortcuts:
+  #   help: 191 # ?
+  #   next: 78 # n
+  #   previous: 80 # p
+  #   search: 83 # s
+
+  features:
+    - tabs
+  #font:
+  #text: 'Ubuntu'
+  #code: 'Ubuntu Mono'
+  #icon:
+  logo: img/logo.png
+  #favicon: 'assets/images/favicon.ico'
+  custom_dir: theme
+
+# Extensions
+markdown_extensions:
+  - meta
+  - admonition
+  - codehilite
+  - attr_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - footnotes
+  # - mdx_math:
+  #     enable_dollar_delimiter: true
+  - toc:
+      permalink: true
+      separator: "_"
+
+# Extra
+extra_css:
+  - stylesheets/dark_theme.css
+  - stylesheets/codehilite.css
+
+# extra_javascript: 
+#     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+#     - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+  # - drawio-exporter:
+  #     drawio_args:
+  #       - --no-sandbox
+
+copyright: '&copy; 2020 Louison SARLIN--MAGNUS'
