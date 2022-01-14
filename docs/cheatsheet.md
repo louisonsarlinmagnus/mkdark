@@ -4,9 +4,15 @@ hide:
   # - toc
 ---
 
+
 # Markdown Cheat Sheet
-https://squidfunk.github.io/mkdocs-material/reference/
-https://facelessuser.github.io/pymdown-extensions/extensions/critic/
+!!! info "A regarder"
+    [https://squidfunk.github.io/mkdocs-material/reference/]()  
+    [https://facelessuser.github.io/pymdown-extensions/extensions/critic/]()  
+    [https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#highlighting-inline-code-blocks]()  
+    [https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#adding-annotations]()  
+    [https://squidfunk.github.io/mkdocs-material/reference/code-blocks/]()  
+
 
 ## Résumé
 
@@ -47,17 +53,17 @@ https://facelessuser.github.io/pymdown-extensions/extensions/critic/
             <h2>Moyen Titre</h2>
                 <h3>Petit Titre</h3>
                     <h4>Petit Sous Titre</h4>
-                        <h5>Très Petit Titre</h3>
-                            <h6>Très Petit Sous Titre</h4>
+                        <h5>Très Petit Titre</h5>
+                            <h6>Très Petit Sous Titre</h6>
         ````
 
     === "Rendu"
-        <h1>Grand titre</h1>
-            <h2>Moyen Titre</h2>
-                <h3>Petit Titre</h3>
-                    <h4>Petit Sous Titre</h4>
-                        <h5>Très Petit Titre</h3>
-                            <h6>Très Petit Sous Titre</h4>
+        <h1 class="headers_exemples">Grand titre</h1>
+            <h2 class="headers_exemples">Moyen Titre</h2>
+                <h3 class="headers_exemples">Petit Titre</h3>
+                    <h4 class="headers_exemples">Petit Sous Titre</h4>
+                        <h5 class="headers_exemples">Très Petit Titre</h5>
+                            <h6 class="headers_exemples">Très Petit Sous Titre</h6>
 
 
 ## Listes
@@ -190,15 +196,39 @@ https://facelessuser.github.io/pymdown-extensions/extensions/critic/
           </figure>
         </center>
         ```
-
-
+        
 ## Code
+
+### Bloc de code
+
+!!! tip "Embarquement d'un fichier"
+
+    === "Markdown"  
+        ````md
+        ``` title="helloworld.cs"
+        --8<--​ "helloworld.cs"
+        ```
+        ````
+        ou pur plusieurs fichiers
+        ````md
+        ```md title="file_name_1.md et file_name_2.md"
+        --8<​ --
+        file_name_1.md
+
+        file_name_2.md
+        --8<​ --
+        ```
+        ````
+    === "Rendu"
+        ```
+        Ici je trouve le contenu du fichier helloworld.cs
+        ```
 
 !!! example "Example"
 
     === "Markdown"
         ````md
-        ```java hl_lines="1-2 5 7" linenums="1"
+        ```java hl_lines="1-2 5 7" linenums="1" title="helloword.c"
         public class HelloWorld {
           // Définition de la fonction main
           public static void main(String[] arg){
@@ -223,7 +253,7 @@ https://facelessuser.github.io/pymdown-extensions/extensions/critic/
         ```
 
     === "Rendu"
-        ```java hl_lines="1-2 5 7" linenums="1"
+        ```java hl_lines="1-2 5 7" linenums="1" title="helloword.c"
         public class HelloWorld {
           // Définition de la fonction main
           public static void main(String[] arg){
@@ -233,24 +263,17 @@ https://facelessuser.github.io/pymdown-extensions/extensions/critic/
         } 
         ```
 
-!!! tip "Suligner du code"
-    Il est possbile de surligner du code en ajoutant `hl_lines="1-2 5 7"` à côté du language choisi.
-
-!!! tip "Ajouter les numeros de ligne"
-    Il est possible d'ajouter les numéros de ligne en ajoutant `linenums="1"` à côté du language choisi.
-
-
 !!! tip "Poupée russe"
     Il est possible d'emboiter des blocs de code en ajoutant un ` a chaque incrément.
+    
+### Arguments
 
-!!! tip "Embarquer un fichier"
-    https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#highlighting-inline-code-blocks
+| Objectif | Moyen |
+|-----------|----------|
+|Ajouter un titre au bloc de code| `title="nom_fichier` |
+| Surligner une/des lignes| `hl_lines="1-2 5 7"`|
+| Numeroter les lignes | `linenums="1"` |
 
-!!! tip "Annotations"
-    https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#adding-annotations
-
-!!! tip "A voir aussi"
-    https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
 
 ## LaTex
 
@@ -389,7 +412,7 @@ https://facelessuser.github.io/pymdown-extensions/extensions/critic/
 
 ## SuperFences
 
-!!! tip
+!!! info
     Une SuperFence est un SuperTabs dans un bloc d'alerte
 
 !!! example "SuperFences"
@@ -577,21 +600,9 @@ https://facelessuser.github.io/pymdown-extensions/extensions/critic/
                 />
         </a>
 
-HTML:
-```html
-<a 
-    href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE
-    "target="_blank">
-        <img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-        alt="IMAGE ALT TEXT HERE"
-        width="240"
-        height="180"
-        border="10"
-        />
-</a>
-```
+## Bloc
 
-## Bloc Spoiler
+### Bloc Spoiler
 
 ```
 ??? warning "Spoiler"
@@ -601,7 +612,7 @@ HTML:
 ??? warning "Spoiler"
     Ceci est un spoiler a dérouler
 
-## Bloc d'alerte
+### Bloc d'alerte
 
 ```
 !!! keyword "titre du bloc facultatif (keyword ou keyword)"
