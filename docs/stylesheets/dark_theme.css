@@ -11,6 +11,14 @@
   --fond-content: #dfdfdf;
 }
 
+.md-typeset abbr{
+  border-bottom: 0.12em dotted white;
+}
+
+.md-typeset hr{
+  border-bottom: solid var(--fond-code);
+}
+
 /*
 Default text color
 and background color
