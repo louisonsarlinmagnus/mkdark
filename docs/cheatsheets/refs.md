@@ -29,25 +29,24 @@
 
 ## Abbréviations
 
-!!! example "Ajouter une infobulle"
-    Il est possible d'ajouter une définition ou un commentaire sur mot ou une abbréviation
+Il est possible d'ajouter une définition ou un commentaire sur mot ou une abbréviation par le biais d'une "infobulle"
 
-    === "Markdown"
-        ```md
-        Le HTML est maintenu par W3C.
+=== "Markdown"
+    ```md
+    Le HTML est maintenu par W3C.
 
-        *[HTML]: Hyper Text Markup Language
-        *[W3C]: World Wide Web Consortium
-        ```
-    === "Rendu"
-        Le HTML est maintenu par W3C.
+    *[HTML]: Hyper Text Markup Language
+    *[W3C]: World Wide Web Consortium
+    ```
+=== "Rendu"
+    Le HTML est maintenu par W3C.
 
-        *[HTML]: Hyper Text Markup Language
-        *[W3C]: World Wide Web Consortium
+    *[HTML]: Hyper Text Markup Language
+    *[W3C]: World Wide Web Consortium
 
 !!! warning "Les définitions se répercutent sur toutes les occurances du mot"
 
-!!! hint "Création d'un glossaire"
+??? hint "Création d'un glossaire"
     En utilisant les snippets pour inclure un fichier, et en définissant dans un fichier externe plusieurs mot on peut créer un glossaire.
     === ":octicons-file-code-16: docs/fichier.md"
         ```md
@@ -61,8 +60,6 @@
         *[W3C]: World Wide Web Consortium
 
         ```
-
-
 
 ## Liens
 
