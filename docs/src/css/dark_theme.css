@@ -11,6 +11,12 @@
   --fond-content: #dfdfdf;
 }
 
+.md-typeset .task-list-indicator::before{
+  background-color: var(--fond-code);
+}
+
+
+
 .md-typeset abbr{
   border-bottom: 0.12em dotted white;
 }

@@ -36,7 +36,7 @@ theme:
     # - header.autohide
     # - navigation.expand
     # - navigation.indexes
-    # - navigation.instant
+    - navigation.instant
     # - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
@@ -105,13 +105,13 @@ extra:
       link: https://linkedin.com/in/louisonsm/
 
 extra_css:
-  - stylesheets/dark_theme.css
-  - stylesheets/codehilite.css
-  - stylesheets/extra.css
+  - src/css/dark_theme.css
+  - src/css/codehilite.css
+  - src/css/extra.css
 
 extra_javascript: 
     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-#     - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+    - src/js/tablesort.js
 
 # Plugins
 plugins:
