@@ -4,203 +4,248 @@
 //////////////////
 */
 
-:root{
-  --fond-noir:#212121;
-  --fond-tres-gris: #5e5e5e;
-  --fond-code: #cacaca;
-  --fond-content: #dfdfdf;
+:root {
+    --fond-noir: #212121;
+    --fond-tres-gris: #5e5e5e;
+    --fond-code: #cacaca;
+    --fond-content: #dfdfdf;
+    --md-progress-stripe: rgba(50, 52, 67, 0.3);
+    --md-progress-100: #00e676;
+    --md-progress-80: #00e676;
+    --md-progress-60: #fbc02d;
+    --md-progress-40: #ff9100;
+    --md-progress-20: #ff5252;
+    --md-progress-0: #ff1744;
 }
 
-.md-typeset .task-list-indicator::before{
-  background-color: var(--fond-code);
+.md-typeset .task-list-indicator::before {
+    background-color: var(--fond-code);
 }
 
-
-
-.md-typeset abbr{
-  border-bottom: 0.12em dotted white;
+.md-typeset abbr {
+    border-bottom: 0.12em dotted white;
 }
 
-.md-typeset hr{
-  border-bottom: solid var(--fond-code);
+.md-typeset hr {
+    border-bottom: solid var(--fond-code);
 }
+
 
 /*
 Default text color
 and background color
 */
-  .md-main {
+
+.md-main {
     color: white;
     background-color: var(--fond-noir);
-  }
-  
-  /*
+}
+
+
+/*
   Main headlines
   */
-  .headers_exemples {
+
+.headers_exemples {
     color: black !important;
     font-weight: normal !important;
     font-variant-caps: normal;
     text-transform: none !important;
-  }
-  
-  .md-main h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
+}
+
+.md-main h1:not([class]),
+h2:not([class]),
+h3:not([class]),
+h4:not([class]),
+h5:not([class]),
+h6:not([class]) {
     color: white;
     font-weight: normal;
     font-variant-caps: normal;
     text-transform: none !important;
-  }
+}
+
+.md-typeset .footnote>ol>li:target {
+    /* background-color: var(--fond-tres-gris); */
+    color: white;
+}
+
+.md-typeset .footnote {
+    color: var(--fond-tres-gris);
+}
 
 
-  /*
+/*
   Tables
   */
-  tbody {
+
+tbody {
     color: black;
     /* background-color: var(--fond-content); */
-  }
+}
 
-  .md-typeset table:not([class]){
+.md-typeset table:not([class]) {
     background-color: var(--fond-content);
     border: var(--fond-noir);
-  }
-  
-  .md-typeset table:not([class]) th {
+}
+
+.md-typeset table:not([class]) th {
     background-color: var(--fond-tres-gris);
-  }
-  
-  /* .md-typeset table:not([class]) tr:hover {
+}
+
+
+/* .md-typeset table:not([class]) tr:hover {
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.04);
   } */
-  
-  .md-typeset :is(.admonition, details){
+
+.md-typeset :is(.admonition, details) {
     background-color: var(--fond-content);
-  }
+}
 
 
-  /*
+/*
   Blockquotes
   */
-  .md-typeset blockquote {
+
+.md-typeset blockquote {
     color: white;
     background-color: var(--fond-tres-gris);
-  }
-  
-  /*
+}
+
+
+/*
   ////////////////////
   // Navigation bar //
   ////////////////////
   */
-  
-  /*
+
+
+/*
   Left and right toc scrollbar
   */
-  .md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
     background-color: #E0E0E0;
-  }
-  
-  
-  
-  .md-nav {
+}
+
+.md-nav {
     color: #F5F5F5;
     background-color: var(--fond-noir);
-  }
-  
-  /*
+}
+
+
+/*
   Arrow Left Icon
   */
-  html .md-nav--primary .md-nav__title:before {
+
+html .md-nav--primary .md-nav__title:before {
     color: #FAFAFA;
-  }
-  
-  .md-nav__title {
+}
+
+.md-nav__title {
     color: #ffffff;
     background-color: var(--fond-noir);
-  }
-  
-  /*
+}
+
+
+/*
   Arrow Right Icon
   */
-  .md-nav--primary .md-nav__link:after {
+
+.md-nav--primary .md-nav__link:after {
     color: #FAFAFA;
-  }
-  
-  .md-nav__list {
+}
+
+.md-nav__list {
     color: #ffffff;
     background-color: var(--fond-noir);
-  }
-  
-  .md-nav__item {
+}
+
+.md-nav__item {
     color: #ffffff;
     background-color: var(--fond-noir);
-  }
-  
-  .md-nav__link[data-md-state=blur] {
+}
+
+.md-nav__link[data-md-state=blur] {
     color: #ffffff8a;
-  }
-  
-  /*
+}
+
+
+/*
   ////////////
   // Search //
   ////////////
   */
-  
-  /*
+
+
+/*
   scroll bar
   
   attention:
   background is scroll handle color!
   */
-  .md-search__scrollwrap::-webkit-scrollbar-thumb {
+
+.md-search__scrollwrap::-webkit-scrollbar-thumb {
     background-color: #E0E0E0;
-  }
-  /*
+}
+
+
+/*
   scroll bar background color
   */
-  .md-search__scrollwrap {
+
+.md-search__scrollwrap {
     background-color: #424242;
-  }
-  
-  /*
+}
+
+
+/*
   Icon color
   */
-  .md-search-result__article--document:before {
+
+.md-search-result__article--document:before {
     color: #EEEEEE;
-  }
-  
-  /*
+}
+
+
+/*
   headline color and
   result list background
   */
-  .md-search-result__list {
+
+.md-search-result__list {
     color: #EEEEEE;
     background-color: var(--fond-noir);
-  }
-  
-  /*
+}
+
+
+/*
   result info/count
   */
-  .md-search-result__meta {
+
+.md-search-result__meta {
     background-color: #EEEEEE;
-  }
-  
-  /*
+}
+
+
+/*
   article preview text color
   */
-  .md-search-result__teaser {
+
+.md-search-result__teaser {
     color: #BDBDBD;
-  }
+}
 
-  .highlight span.filename {
-  margin-top: 0%;
-  background-color: #5e5e5e;
-  }
+.highlight span.filename {
+    margin-top: 0%;
+    background-color: #5e5e5e;
+}
 
-  .md-header__button.md-logo {
+.md-header__button.md-logo {
     filter: invert(100%);
-  }
+}
 
-  .normal{
+.normal {
     color: white;
-  }
+}
