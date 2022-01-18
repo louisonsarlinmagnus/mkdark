@@ -25,8 +25,12 @@ nav:
 theme:
   name: material
   palette:
-    primary: deep purple
-    accent: purple
+    - scheme: default
+      primary: deep purple
+      accent: purple
+    #   toggle:
+    #     icon: material/toggle-switch
+    #     name: Switch to dark mode
   highlightjs: true
   include_sidebar: false
   features:
@@ -61,7 +65,10 @@ markdown_extensions:
   - admonition
   # - codehilite
   - attr_list
-  - pymdownx.arithmatex
+  - pymdownx.progressbar
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
@@ -105,13 +112,21 @@ extra:
       link: https://linkedin.com/in/louisonsm/
 
 extra_css:
+  # - src/css/extra-vol.css
   - src/css/dark_theme.css
   - src/css/codehilite.css
   - src/css/extra.css
+  - src/css/extra_progressbar.css
+
 
 extra_javascript: 
-    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-    - src/js/tablesort.js
+  - src/js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - src/js/tablesort.js
+
 
 # Plugins
 plugins:

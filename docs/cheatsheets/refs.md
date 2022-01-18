@@ -96,3 +96,31 @@ Il est possible d'ajouter une définition ou un commentaire sur mot ou une abbr�
     <a href="../blob/master/LICENSE">Référence a un fichier</a>
     <a href="#liens">Réference a un paragraphe</a>
     ```
+
+## Notes de pied de page
+
+=== "Sur une ligne"
+    ```md
+    Une phrase qui mérite une note de pied de page.[^1]
+
+    [^1]: Lorem ipsum dolor sit amet.
+    ```
+
+=== "Sur plusieurs lignes"
+    ```md
+    Une autre phrase qui mérite une grosse note de pied de page.[^1]
+
+    [^2]:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla.
+        Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+    ```
+=== "Rendu"
+    <span style="color:black">Une autre phrase qui mérite une grosse note de pied de page.[^1]  
+    Une phrase qui mérite une note de pied de page.[^2]  
+    <br>
+    [:material-arrow-down: Voir les notes en bas de page](#fn:1)
+    </span>
+    [^1]: Lorem ipsum dolor sit amet.
+    [^2]:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla.
+        Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.

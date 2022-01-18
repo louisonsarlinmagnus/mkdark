@@ -1,5 +1,31 @@
 # Mise en page
 
+## Formattage
+
+=== "Markdown"
+    ```md
+    Text can be {-​-deleted--} and replacement text {+​+added++}. This can also be
+    combined into {~​~one~>a single~~} operation. {=​=Highlighting==} is also
+    possible {>​>and comments can be added inline<<}.
+
+    {=​=
+    Formatting can also be applied to blocks by putting the opening and closing
+    tags on separate lines and adding new lines between the tags and the content.
+    ==}
+    ```
+=== "Rendu"
+    <span style="color: black">
+    Text can be {--deleted--} and replacement text {++added++}. This can also be
+    combined into {~~one~>a single~~} operation. {==Highlighting==} is also
+    possible {>>and comments can be added inline<<}.
+
+    {==<span style="color: black">
+    Formatting can also be applied to blocks by putting the opening and closing
+    tags on separate lines and adding new lines between the tags and the content.
+    ==}
+    </span>
+
+
 ## Titres
 
 === "Markdown"
@@ -214,6 +240,27 @@
 
 !!! tip "LaTex"
     Pour utiliser le LaTex il suffit d'entourer la formule par le symbole '$'.
+
+=== "Equation dans une ligne"
+    ```latex
+    L'homomorphisme $f$ est injectif si et seulement si son noyau est le seulement
+    le singleton $e_G$, car sinon $\exists a,b\in G$ avec $a\neq b$ tel que$f(a)=f(b)$.
+    ```
+=== "Bloc d'équation"
+    ```latex
+    $$
+    \operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
+    $$
+    ```
+=== "Rendu"
+    <span style="color: black">
+    L'homomorphisme $f$ est injectif si et seulement si son noyau est le seulement
+    le singleton $e_G$, car sinon $\exists a,b\in G$ avec $a\neq b$ tel que$f(a)=f(b)$.
+    $$
+    \operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
+    $$
+    </span>
+
 
 | Opération        | LaTex         | Rendu           |
 |------------------|---------------|-----------------|
